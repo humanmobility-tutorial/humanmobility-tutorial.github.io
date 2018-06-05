@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Human Mobility Analysis: Data, Measures, Generative Models and Predictive Algorithms</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <style>
+    	#menu {
+  			position: fixed;
+  			z-index: 1;
+  			width: 100%
+  			
+			}
+	</style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" id="menu">
+        <div class="nav__container  container">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#content">Content</a>
+            </li>
+            <li class="nav__item">
+              <a href="#outline">Outline</a>
+            </li>
+            <li class="nav__item">
+              <a href="#materials">Materials</a>
+            </li>
+             <li class="nav__item">
+              <a href="#speakers">Speakers</a>
+            </li>
+             <li class="nav__item">
+              <a href="#references">References</a>
+            </li>
+          </ul>
+          <div class="nav__search  search">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <div class="col-md-12  nav-toggle">
+        <svg class="nav-toggle__icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toggle"></use>
+        </svg>
+      </div>
+      <div class="col-md-12  header__logo">
+        <div class="logo">
+          <h1><a class="logo__link" href="index.html">Human Mobility Analysis<br> Data, Measures, Generative Models and Predictive Algorithms</a></h1> <br><br>
+          <h4>A Comprehensive overview of both data and models for human mobility.</h4>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="col-md-8  col-lg-9  container--list">
+          <div class="post  post--list">
+            <div class="row">
+              
+              <div class="col-sm-12  col-md-12  post__list-content">
+                
+                <div class="post__title" id="abstract">
+                  <h2>Abstract</h2>
+                </div>
+                <div class="post__content">
+                	The rapid inclusion of tracking technologies in our personal devices opened the doors to the analysis and visualization of large sets of geo-spatial mobility data, in particular GPS traces. 
+                	In this tutorial we will present a concise and intuitive overview on both fundamental modeling principles of human mobility, and machine learning models applicable to specific mobility-related problems.
+                	In particular, we will review the state of the art of four main aspects in human mobility: (1) the human mobility data landscape; (2) the privacy issues with human mobility data; (3) key metrics
+                	and measures; (4) generative and phenomenological models at the level of individual, population and mixture of the two; (5) machine learning models for next location prediction.
+               		<br><br>
+                </div>
+                
+                <div class="post__title" id="content">
+                <br><br>
+                  <h2><a href="single-post.html">Content</a></h2>
+                </div>
+                <div class="post__content">
+                	The availability of geo-spatial mobility data (e.g., GPS traces) is a trend that will grow in the near future. In particular, this will happen when the shift from traditional vehicles to autonomous, 
+                	self-driving, vehicles, will transform our society, the economy and the environment. For this reason, understanding and modeling human mobility is of paramount importance for many present and 
+                	future applications such as traffic forecasting, urban planning, estimating migratory flows, and epidemic modeling.
+					In this tutorial we will present a concise and intuitive overview on both fundamental modeling principles of human mobility, and machine learning models applicable to specific mobility-related problems. 
+					In particular, we will review the state of the art of four main aspects in human mobility:
+					<ul>
+						<li> The human mobility data landscape, from GPS traces to location-based social network data;
+						<li> Key metrics and measures, as well as a short overview of the fundamental physics behind human mobility;
+						<li> Generative and phenomenological models at the level of individual, population and mixture of the two;
+						<li> Machine learning models, with a particular focus on deep learning, for next location prediction.
+					</ul>
+					
+					The study of human mobility is highly data-driven oriented and very interdisciplinary. For this reason, we believe this tutorial will be of interest to researchers and practitioners with different
+					backgrounds and coming from different research fields. Human mobility analysis and modeling is of fundamental importance in different contexts, from public health and epidemic modeling to urban planning, 
+					transportation engineering and the design of self-driving cars. A wide audience of computer scientists, physicists, social scientists, and engineers that may be interested in developing solutions based on 
+					mobility knowledge, such as agent-based simulators to generate realistic spatio-temporal trajectories, or accurate models for predicting future displacements and locations visited by individuals, 
+					would find it very inspiring and valuable in attending this tutorial. The attendants will not only learn the basic knowledge of human mobility analysis and modeling, but can also benefit from the 
+					illustration of detailed theories and algorithms for solving the learning challenges in the above areas and domains. 
+					<br><strong>Just a basic knowledge of data mining techniques and statistical modeling is required from the audience.</strong>
+            	</div>
+              
+              	<div class="post__title" id="outline">
+              		<br><br>
+                	<h2><a href="single-post.html">Outline</a></h2>
+              	</div>
+				<div class="post__content">
+					<ul>
+						<li> <b>The human mobility data landscape</b> <br>
+							A natural starting point is to describe the nature of empirical data which has been used in mobility research. In this part, we outline the main sources available for mobility research and 
+							the relevant information that can be extracted from them.
+						<li> <b> Measures of individual and collective mobility </b> <br>
+						In this part, we will review some of the fundamental metrics and representations used to characterize mobility, such as trip distance <b>[11, 15]</b>, radius of gyration <b>[15, 28, 27]</b>, mobility entropy <b>[37, 20]</b>, 
+						origin-destination matrix <b>[10]</b>, mobility motifs <b>[33, 16]</b>.
+						<li> <b> Generative models of human mobility: from mechanisms to algorithms </b> <br>
+						This part will review the state of the art for generative models at two different levels: individual level (i.e., generation of individual spatio-temporal trajectories) <b>[28, 25, 26, 4, 36]</b> and population 
+						(i.e., generation of mobility fluxes) <b>[34, 17, 8, 41, 35, 27]</b>.
+						<li> <b> Where’s next? Machine Learning models for human mobility </b> <br>
+						After a short review of various machine learning models for human mobility <b>[45, 22, 23, 39]</b> we will review recent advances based on deep learning, with particular focus on next location 
+						prediction <b>[19, 46, 43, 42, 14]</b>.
+						<br><br>
+					</ul>
+				</div>
+				
+				<div class="post__title" id="materials">
+				<br><br>
+                  <h2>Materials</h2>
+              	</div>
+				<div class="post__content">
+					To appear.
+				</div>
+				
+				<div class="post__title" id="speakers">
+				<br><br>
+                  <h2>Speakers</h2>
+              	</div>
+				<div class="post__content">
+					<ul>
+						<li> <b><a href="http://www.bristol.ac.uk/engineering/people/filippo-simini/index.html" target="_blank">Filippo Simini</a></b> <br>
+						Lecturer in the department of Engineering Mathematics at the University of Bristol, UK. He combines methods from statistical physics, complex systems and data science to discover and characterise 
+						the distinctive statistical patterns of a system and to develop mathematical models to describe the system’s dynamics and emergent properties. He is particularly interested in interdisciplinary 
+						problems and applications, including collective and individual human mobility, transportation, ecological networks and population dynamics. He has publications in Nature, PNAS, and Nature 
+						Communications and his work has impact and applications on epidemic modelling, the assessment of future mobility scenarios and emergency planning.
+						<li> <b> <a href="https://gbarlacchi.github.io/" target="_blank">Gianni Barlacchi </a> </b> <br>
+						PhD candidate in Computer Science at the University of Trento (Italy). His primary research focuses on developing novel machine learning models and neural networks to predict people’s activities from textual and geo-spatial data. Gianni has been a visiting scholar at Telefonica I+D and IBM Research. 
+						He has been awarded in 2017 by the ACM CIKM Analyticup 2017 competition on mobility, and awarded by IBM in 2015 for the Watson Services Challenge. His PhD is supported with a fellowship by TIM (Telecom Italia).
+						<li> <b> <a href="https://lucapappalardo.com/" target="_blank"> Luca Pappalardo </a> </b> <br>
+						Post-doc at the Institute of Information Science and Technologies (ISTI) at the Italian National Research Council (CNR) in Pisa. His research focuses on the analysis of Big Data sources describing human mobility, such as mobile phone data, GPS traces from 
+						private vehicles, checkins from location-based social networks. He has published over 20 papers on human mobility analysis and modeling in top conferences and journals relevant to the field, such as ACM TIST, 
+						Data Mining and Knowledge Discovery (DMKD), ACM CIKM, IEEE ICDM, IEEE DSAA, IEEE BigData and Nature Communications. He has been awarded in 2017 by the ACM CIKM Analyticup 2017 competition on human mobility 
+						analysis, and awarded by Google in 2014 at a contest on innovative ideas on the usage of Big Data sources as support for official statistics.
+						<br><br>
+					</ul>
+				</div>
+				
+				<div class="post__title" id="references">
+				<br><br>
+                  <h2>References</h2>
+                </div>
+				<div class="post__content">
+					<b>[1]</b> Abul, O., Bonchi, F., and Nanni, M. Never walk alone: Uncertainty for anonymity in moving objects databases. In Proceedings of the 24th International Conference on Data Engineering, ICDE 2008, April 7-12, 2008, Cancún, México (2008), pp. 376–385. <br>
+					<b>[2]</b> Balcan, D., Colizza, V., Gonçalves, B., Hu, H., Ramasco, J. J., and Vespignani, A. Multiscale mobility networks and the spatial spreading of infectious diseases. Proceedings of the National Academy of Sciences 106, 51 (2009), 21484–21489. <br>
+					<b>[3]</b> Barbosa, H., Barthelemy, M., Ghoshal, G., James, C. R., Lenormand, M., Louail, T., Menezes, R., Ramasco, J. J., Simini, F., and Tomasini, M. Human mobility: Models and applications. Physics Reports (2018). <br>
+					<b>[4]</b> Barbosa, H., de Lima-Neto, F. B., Evsukoff, A., and Menezes, R. The effect of recency to human mobility. EPJ Data Science 4, 1 (2015), 21. <br>
+					<b>[5]</b> Barlacchi, G., De Nadai, M., Larcher, R., Casella, A., Chitic, C., Torrisi, G., Antonelli, F., Vespignani, A., Pentland, A., and Lepri, B. A multi-source dataset of urban life in the city of milan and the province of trentino. Scientific data 2 (2015), 150055. <br>
+					<b>[6]</b> Barlacchi, G., Perentis, C., Mehrotra, A., Musolesi, M., and Lepri, B. Are you getting sick? predicting influenza-like symptoms using human mobility behaviors. EPJ Data Science 6, 1 (2017), 27. <br>
+					<b>[7]</b> Basu, A., Monreale, A., Corena, J. C., Giannotti, F., Pedreschi, D., Kiyomoto, S., Miyake, Y., Yanagihara, T., and Trasarti, R. A privacy risk model for trajectory data. In Trust Management VIII, J. Zhou, N. Gal-Oz, J. Zhang, and E. Gudes, Eds., vol. 430 of IFIP Advances in Information and Communication Technology. Springer Berlin Heidelberg, 2014, pp. pp 125–140.<br>
+					<b>[8]</b> Beiró, M. G., Panisson, A., Tizzoni, M., and Cattuto, C. Predicting human mobility through the assimilation of social media traces into mobility models. EPJ Data Science 5, 1 (2016), 30.<br>
+					<b>[9]</b> Blondel, V. D., Decuyper, A., and Krings, G. A survey of results on mobile phone datasets analysis. EPJ Data Science 4, 1 (2015), 10. <br>
+					<b>[10]</b> Bonnel, P., Hombourger, E., Olteanu-Raimond, A.-M., and Smoreda, Z. Passive mobile phone dataset to construct origin-destination matrix: Potentials and limitations. Transportation Research Procedia 11 (2015), 381 – 398. <br>
+					<b>[11]</b> Brockmann, D., Hufnagel, L., and Geisel, T. The scaling laws of human travel. Nature 439, 7075 (01 2006), 462–465. <br>
+					<b>[12]</b> Cho, E., Myers, S. A., and Leskovec, J. Friendship and mobility: User movement in location-based social networks. In Proceedings of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (2011), KDD ’11, ACM, pp. 1082– 1090. <br>
+					<b>[13]</b> de Montjoye, Y.-A., Hidalgo, C. A., Verleysen, M., and Blondel, V. D. Unique in the crowd: The privacy bounds of human mobility. Scientific Reports 3 (2013).<br>
+					<b>[14]</b> Feng, J., Li, Y., Zhang, C., Sun, F., Meng, F., Guo, A., and Jin, D. Deepmove: Predicting human mobility with attentional recurrent networks.<br>
+					<b>[15]</b> Gonzalez, M. C., Hidalgo, C. A., and Barabasi, A.-L. Understanding individual human mobility patterns. Nature 453, 7196 (2008), 779.<br>
+					<b>[16]</b> Jiang, S., Yang, Y., Gupta, S., Veneziano, D., Athavale, S., and González, M. C. The timegeo modeling framework for urban mobility without travel surveys. Proceedings of the National Academy of Sciences 113, 37 (2016), E5370–E5378. <br>
+					<b>[17]</b> Kang, C., Liu, Y., Guo, D., and Qin, K. A generalized radiation model for human mobility: Spatial scale, searching direction and trip constraint. PLoS ONE 10, 11 (11 2015), 1–11. <br>
+					<b>[18]</b> Lin, M., and Hsu, W.-J. Mining gps data for mobility patterns: A survey. Pervasive and Mobile Computing 12 (2014), 1–16. <br>
+					<b>[19]</b> Liu, Q., Wu, S., Wang, L., and Tan, T. Predicting the next location: A recurrent model with spatial and temporal contexts. In AAAI (2016), pp. 194–200. <br>
+					<b>[20]</b> Lu, X., Wetter, E., Bharti, N., Tatem, A. J., and Bengtsson, L. Approaching the limit of predictability in human mobility. Scientific Reports 3 (10 2013). <br>
+					<b>[21]</b> Lv, Y., Duan, Y., Kang, W., Li, Z., and Wang, F.-Y. Traffic flow prediction with big data: a deep learning approach. IEEE Transactions on Intelligent Transportation Systems 16, 2 (2015), 865–873. <br>
+					<b>[22]</b> Mathew, W., Raposo, R., and Martins, B. Predicting future locations with hidden markov models. In Proceedings of the 2012 ACM conference on ubiquitous computing (2012), ACM, pp. 911–918. <br>
+					<b>[23]</b> Monreale, A., Pinelli, F., Trasarti, R., and Giannotti, F. Wherenext: a location predictor on trajectory pattern mining. In Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining (2009), KDD’09, ACM, pp. 637–646. <br>
+					<b>[24]</b> Monreale, A., Rinzivillo, S., Pratesi, F., Giannotti, F., and Pedreschi, D. Privacy-by-design in big data analytics and social mining. EPJ Data Science 3, 1 (2014). <br>
+					<b>[25]</b> Pappalardo, L., Rinzivillo, S., and Simini, F. Human mobility modelling: Exploration and preferential return meet the gravity model. Procedia Computer Science 83 (2016), 934 – 939. The 7th International Conference on Ambient Systems, Networks and Technologies (ANT 2016) / The 6th International Conference on Sustainable Energy Information Technology(SEIT-2016) / Affiliated Workshops. <br>
+					<b>[26]</b> Pappalardo, L., and Simini, F. Modelling individual routines and spatio-temporal trajectories in human mobility. arXiv preprint arXiv:1607.05952 (2016). <br>
+					<b>[27]</b> Pappalardo, L., and Simini, F. Data-driven generation of spatio-temporal routines in	human mobility. Data Mining and Knowledge Discovery (2017), 1–43. <br>
+					<b>[28]</b> Pappalardo, L., Simini, F., Rinzivillo, S., Pedreschi, D., Giannotti, F., and Barabasi, A.-L. Returners and explorers dichotomy in human mobility. Nature Communications 6 (2015). <br>
+					<b>[29]</b> Pellungrini, R., Pappalardo, L., Pratesi, F., and Monreale, A. A data mining approach to assess privacy risk in human mobility data. ACM Trans. Intell. Syst. Technol. 9, 3 (Dec. 2017), 31:1–31:27. <br>
+					<b>[30]</b> Polson, N. G., and Sokolov, V. O. Deep learning for short-term traffic flow prediction. Transportation Research Part C: Emerging Technologies 79 (2017), 1–17. <br>
+					<b>[31]</b> Rubinstein, I. S. Big data: The end of privacy or a new beginning? International Data Privacy Law (2013). <br>
+					<b>[32]</b> Santi, P., Resta, G., Szell, M., Sobolevsky, S., Strogatz, S. H., and Ratti, C. Quantifying the benefits of vehicle pooling with shareability networks. Proceedings of the National Academy of Sciences 111, 37 (2014), 13290–13294. <br>
+					<b>[33]</b> Schneider, C. M., Belik, V., Couronné, T., Smoreda, Z., and González, M. C. Unravelling daily human mobility motifs. Journal of The Royal Society Interface 10, 84 (2013). <br>
+					<b>[34]</b> Simini, F., Gonzalez, M. C., Maritan, A., and Barabasi, A.-L. A universal model for mobility and migration patterns. Nature 484, 7392 (04 2012), 96–100. <br>
+					<b>[35]</b> Simini, F., Maritan, A., and Néda, Z. Human mobility in a continuum approach. Plos one 8, 3 (2013), e60069. <br>
+					<b>[36]</b> Song, C., Koren, T., Wang, P., and Barabasi, A.-L. Modelling the scaling properties of human mobility. Nature Physics 6, 10 (10 2010), 818–823. <br>
+					<b>[37]</b> Song, C., Qu, Z., Blumm, N., and Barabási, A.-L. Limits of predictability in human mobility. Science 327, 5968 (2010), 1018–1021. <brR
+					<b>[38]</b> Spinsanti, L., Berlingerio, M., and Pappalardo, L. Mobility and geo-social networks. In Mobility Data: Modeling, Management, and Understanding. 2013, pp. 315–333. <br>
+					<b>[39]</b> Wang, D., Pedreschi, D., Song, C., Giannotti, F., and Barabási, A. Human mobility, social ties, and link prediction. <br>
+					In Proceedings of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, San Diego, CA, USA, August 21-24, 2011 (2011), KDD’11, pp. 1100–1108. <br>
+					<b>[40]</b> Wang, H., and Li, Z. Region representation learning via mobility flow. In Proceedings of the 2017 ACM on Conference on Information and Knowledge Management (2017), ACM, pp. 237–246. <br>
+					<b>[41]</b> Yan, X.-Y., Zhao, C., Fan, Y., Di, Z., and Wang, W.-X. Universal predictability of mobility patterns in cities. Journal of The Royal Society Interface 11, 100 (2014), 20140834. <br>
+					<b>[42]</b> Yang, C., Sun, M., Zhao, W. X., Liu, Z., and Chang, E. Y. A neural network approach to jointly modeling social networks and mobile trajectories. ACM Transactions on Information Systems (TOIS) 35, 4 (2017), 36. <br>
+					<b>[43]</b> Yao, S., Hu, S., Zhao, Y., Zhang, A., and Abdelzaher, T. Deepsense: A unified deep learning framework for time-series mobile sensing data processing. In Proceedings of the 26th International Conference on World Wide Web (2017), WWW’17, pp. 351–360. <br>
+					<b>[44]</b> Yuan, N. J., Zheng, Y., and Xie, X. Discovering functional zones in a city using human movements and points of interest. In Spatial Analysis and Location Modeling in Urban and Regional Systems. Springer, 2018, pp. 33–62. <br>
+					<b>[45]</b> Zhang, C., Zhang, K., Yuan, Q., Zhang, L., Hanratty, T., and Han, J. Gmove: Group-level mobility modeling using geo-tagged social media. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (2016), KDD’16, ACM, pp. 1305–1314. <br
+					<b>[46]</b> Zhang, J., Zheng, Y., and Qi, D. Deep spatio-temporal residual networks for citywide crowd flows prediction. In AAAI (2017), pp. 1655–1661.<br>
+					<b>[47]</b> Zhao, K., Tarkoma, S., Liu, S., and Vo, H. Urban human mobility data mining: An overview. In Big Data (Big Data), 2016 IEEE International Conference on (2016), IEEE, pp. 1911–1920.<br>
+                </div>            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4  col-lg-3">
+        	<div class="sidebar-widget">
+            	<h3><a href="http://www.ecmlpkdd2018.org/tutorials/" target="_blank">Tutorial at ECML/PKDD 2018</a></h3>
+            	<div class="sidebar-widget__about-me">
+              		<div class="sidebar-widget__about-me-image">
+                		<img src="img/ecml-logo.jpg" alt="About Me">
+              		</div>
+            	</div>
+          	</div> 
+        </div> 
+      
+    </main>
+    
+    <footer class="footer">
+      <div class="container  footer__top">
+        
+      </div>
+      <div class="container  footer__bottom">
+        <div class="col-sm-8  col-md-8  footer__bottom-copyright">
+          <p>2018 © scikit-mob</p>
+        </div>
+        <div class="col-sm-4  col-md-4  footer__bottom-social">
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-google"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pinterest"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="content-overlay"></div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    	$("nav").find("a").click(function(e) {
+    			e.preventDefault();
+    			var section = $(this).attr("href");
+    		$("html, body").animate({
+        	scrollTop: $(section).offset().top
+    		});
+		});
+    </script>
+  </body>
+</html>
